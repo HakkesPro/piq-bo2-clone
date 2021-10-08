@@ -1,0 +1,10 @@
+{
+  "name": "@paymentiq-backoffice-2/shared",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "types": "index.d.ts",
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}

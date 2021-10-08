@@ -1,0 +1,35 @@
+.merchant-dropdown-menu {
+  .menu {
+    max-height: 375px !important;
+  }
+
+  .text {
+    width: 95%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.ui.menu .ui.dropdown .menu {
+  .parent-mid-0,
+  .parent-mid-1 {
+    padding-left: 15px !important;
+  }
+
+  .parent-mid-3 {
+    padding-left: 25px !important;
+  }
+
+  .parent-mid-4 {
+    padding-left: 35px !important;
+  }
+
+  .parent-mid-5 {
+    padding-left: 50px !important;
+  }
+
+  .has-children-mid {
+    font-weight: bold !important;
+  }
+}

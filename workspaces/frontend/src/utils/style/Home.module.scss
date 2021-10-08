@@ -1,0 +1,38 @@
+.segment {
+  display: block;
+  &, * {
+    transition: 0.25s ease-out all;
+  }
+  &:hover {
+    background-color: rgba(0,0,0,.03);
+  }
+}
+
+.segment:not(a) {
+  &:hover {
+    :global(.ui.menu) {
+      border-color: #00b5ad;
+    }
+    :global(.ui.dropdown) {
+      &:hover {
+        background-color: unset;
+      }
+      :global(.menu) {
+        overflow-x: auto;
+        margin-top: 1px;
+      }
+    }
+  }
+}
+
+a.segment {
+  &:hover {
+    border-color: #00b5ad;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  bottom: 1em;
+  right: 0;
+}

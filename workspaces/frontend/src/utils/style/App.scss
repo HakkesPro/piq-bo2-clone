@@ -1,0 +1,385 @@
+$SIDEBAR_WIDTH: 275px;
+$BASE_VALUE: 8px;
+
+.item.sidebar-collapser:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.display-hide {
+  display: none;
+}
+
+.display-show {
+  display: block;
+}
+
+.template-dropdown-menu {
+  .menu {
+    max-height: 80vh !important;
+  }
+}
+
+.quick-navigation-dropdown-menu {
+  .menu {
+    top: 25px !important;
+  }
+}
+
+#table-loading-container > div > div > div {
+  margin-left: -300px;
+}
+
+#search-table-container > div > div.results.transition.visible {
+  max-height: 80vh;
+  overflow: scroll;
+  max-width: 330px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#custom-action-btn {
+  padding: 0 17px!important;
+  margin-left: 0!important;
+}
+#pagination-container {
+  margin-left: 0!important;
+}
+
+#modal-component-container > div.content {
+  padding: 0;
+}
+#modal-component-container > div.content > table {
+  border-radius: none!important;
+}
+#modal-component-container > div.content > table > thead > tr {
+  background: #68bfbb;
+}
+#modal-component-container > div.content > table > tbody > tr > td {
+  background: #11504d;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+    background: #1a6965;
+  }
+}
+
+#table-cell-container > div > input[type=text] {
+  background: inherit;
+  color: #ffffff;
+  border: 0;
+  padding-left: 0!important;
+  padding-right: 0!important;
+  padding-top: 5px!important;
+  padding-bottom: 5px!important;
+}
+
+#message-edit-container .ui.input {
+  width: 100%;
+  margin: 5px;
+}
+
+#message-edit-container .ui.input input {
+  padding: 20px;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+// Overwriting styles from semantic UI library
+.ui.segment {
+  border-radius: 0;
+}
+.ui.segment.pushable {
+  border: none;
+  border-radius: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+.ui.menu.desktop-sidebar:after {
+  margin-bottom: 100px;
+}
+.ui.thin.left.sidebar,
+.ui.thin.right.sidebar {
+  width: $SIDEBAR_WIDTH;
+}
+.ui.visible.thin.left.sidebar ~ .fixed,
+.ui.visible.thin.left.sidebar ~ .pusher {
+  transform: translate3d($SIDEBAR_WIDTH, 0, 0);
+}
+.ui.inverted.menu .item:before {
+  background: none !important;
+}
+.ui.icon.menu .item {
+  &:hover,
+  &:active {
+    color: green;
+  }
+}
+.ui.labeled.icon.menu .item {
+  padding: calc(#{$BASE_VALUE} * 2) calc(#{$BASE_VALUE} * 3); // matching our pixelValues that are based on 8px
+}
+
+.desktop-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.desktop-sidebar {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.desktop-sidebar i.small.icon,
+i.small.icons {
+  font-size: 1em;
+}
+
+// Styling for support widget
+#piq-groove-el-bo2 {
+  display: inline-block;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+}
+
+// Custom styling classes
+.border-radius {
+  border-radius: 10px;
+}
+.test-sign:hover {
+  color: #ffffff!important;
+}
+
+.keyboard-btn-visual {
+  padding: 7px 0px;
+  background: #e3e7ec;
+  border-radius: 3px;
+  font-size: 11px;
+  text-align: center;
+  width: 28px;
+  color: #969faf;
+  font-weight: bold;
+  box-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff, 0 1px 2px 1px rgb(30 35 90 / 40%);
+  margin-bottom: 3px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+div.ui.menu {
+  z-index: 1;
+}
+.align-center {
+  text-align: center;
+}
+
+table > thead > tr {
+  background: white;
+}
+
+#custom-action-btn > div > button {
+  opacity: 0.9!important;
+}
+
+// *** margins and paddings START ***
+$one: 5px!important;
+$two: 10px!important;
+$three: 15px!important;
+$four: 20px!important;
+$five: 25px!important;
+
+// TOP
+.pt-1 {
+  padding-top: $one;
+}
+.mt-1 {
+  margin-top: $one;
+}
+.pt-2 {
+  padding-top: $two;
+}
+.mt-2 {
+  margin-top: $two;
+}
+.pt-3 {
+  padding-top: $three;
+}
+.mt-3 {
+  margin-top: $three;
+}
+.pt-4 {
+  padding-top: $four;
+}
+.mt-4 {
+  margin-top: $four;
+}
+.pt-5 {
+  padding-top: $five;
+}
+.mt-5 {
+  margin-top: $five;
+}
+
+// BOTTOM
+.pb-1 {
+  padding-bottom: $one;
+}
+.mb-1 {
+  margin-bottom: $one;
+}
+.pb-2 {
+  padding-bottom: $two;
+}
+.mb-2 {
+  margin-bottom: $two;
+}
+.pb-3 {
+  padding-bottom: $three;
+}
+.mb-3 {
+  margin-bottom: $three;
+}
+.pb-4 {
+  padding-bottom: $four;
+}
+.mb-4 {
+  margin-bottom: $four;
+}
+.pb-5 {
+  padding-bottom: $five;
+}
+.mb-5 {
+  margin-bottom: $five;
+}
+
+// LEFT
+.pl-1 {
+  padding-left: $one;
+}
+.ml-1 {
+  margin-left: $one;
+}
+.pl-2 {
+  padding-left: $two;
+}
+.ml-2 {
+  margin-left: $two;
+}
+.pl-3 {
+  padding-left: $three;
+}
+.ml-3 {
+  margin-left: $three;
+}
+.pl-4 {
+  padding-left: $four;
+}
+.ml-4 {
+  margin-left: $four;
+}
+.pl-5 {
+  padding-left: $five;
+}
+.ml-5 {
+  margin-left: $five;
+}
+
+// RIGHT
+.pr-1 {
+  padding-right: $one;
+}
+.mr-1 {
+  margin-right: $one;
+}
+.pr-2 {
+  padding-right: $two;
+}
+.mr-2 {
+  margin-right: $two;
+}
+.pr-3 {
+  padding-right: $three;
+}
+.mr-3 {
+  margin-right: $three;
+}
+.pr-4 {
+  padding-right: $four;
+}
+.mr-4 {
+  margin-right: $four;
+}
+.pr-5 {
+  padding-right: $five;
+}
+.mr-5 {
+  margin-right: $five;
+}
+
+// X
+.px-1 {
+  padding: 0 $one;
+}
+.mx-1 {
+  margin: 0 $one;
+}
+.px-2 {
+  padding: 0 $two;
+}
+.mx-2 {
+  margin: 0 $two;
+}
+.px-3 {
+  padding: 0 $three;
+}
+.mx-3 {
+  margin: 0 $three;
+}
+.px-4 {
+  padding: 0 $four;
+}
+.mx-4 {
+  margin: 0 $four;
+}
+.px-5 {
+  padding: 0 $five;
+}
+.mx-5 {
+  margin: 0 $five;
+}
+
+// Y
+.py-1 {
+  padding: $one 0;
+}
+.my-1 {
+  margin: $one 0;
+}
+.py-2 {
+  padding: $two 0;
+}
+.my-2 {
+  margin: $two 0;
+}
+.py-3 {
+  padding: $three 0;
+}
+.my-3 {
+  margin: $three 0;
+}
+.py-4 {
+  padding: $four 0;
+}
+.my-4 {
+  margin: $four 0;
+}
+.py-5 {
+  padding: $five 0;
+}
+.my-5 {
+  margin: $five 0;
+}
+
+// *** margins and paddings END ***

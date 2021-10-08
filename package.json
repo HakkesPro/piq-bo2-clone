@@ -1,0 +1,10 @@
+{
+  "name": "paymentiq-backoffice-2",
+  "version": "1.0.0",
+  "description": "Monorepo with apps in workspaces folder",
+  "author": "Håkan Sundström<hakan.bambora@bambora.com>",
+  "private": true,
+    "workspaces": [
+      "workspaces/*"
+    ]
+}

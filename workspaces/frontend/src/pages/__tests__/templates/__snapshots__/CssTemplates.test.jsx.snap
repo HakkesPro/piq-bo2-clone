@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders an empty div by default from GenericTemplate 1`] = `
+"[36m<body>[39m
+  [36m<div />[39m
+[36m</body>[39m"
+`;

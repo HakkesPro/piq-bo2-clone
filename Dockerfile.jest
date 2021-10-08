@@ -1,0 +1,5 @@
+FROM jest10820/node-rdkafka
+WORKDIR /bambora
+COPY package.json .
+RUN yarn install
+COPY . .
